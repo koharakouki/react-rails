@@ -28,10 +28,12 @@
 // export default MainContainer;
 
 
-import React from 'react'
+import React from 'react';
 import axios from 'axios';
+import ProductsContainer from './ProductsContainer';
 
-class MainContainer extends React.Component {
+
+class MainContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -54,6 +56,7 @@ componentDidMount() {
   render() {
     return (
       <div className='app-main'>
+        <ProductsContainer productData={ this.state.products } />
       </div>
     );
   }
