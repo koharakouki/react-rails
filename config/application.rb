@@ -38,5 +38,6 @@ module ReactRails
         :headers => :any,
         :methods => [:get, :post, :patch, :delete, :options]
       end
+    end
   end
 end
